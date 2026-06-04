@@ -43,3 +43,16 @@
         <input type="text" name="city" placeholder="Enter city name..." required />
         <button type="submit">Search</button>
     </form>
+
+    {% if weather %}
+    <div class="weather-box">
+        <h2>{{ weather.city }}</h2>
+        <h1>{{ weather.temp }}°C</h1>
+        <p>{{ weather.description }}</p>
+        <p>Feels like: {{ weather.feels_like }}°C</p>
+        <p>Humidity: {{ weather.humidity }}%</p>
+        <p>Wind: {{ weather.wind }} m/s</p>
+    </div>
+    {% endif %}
+</body>
+</html>
