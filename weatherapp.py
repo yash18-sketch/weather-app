@@ -1,10 +1,14 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 import requests
 import os
 
 app = Flask(__name__)
 
 api_key = "d7fcc888f9c930253aad15b1560d29dc"
+
+@app.route("/manifest.json")
+def manifest():
+    return send_from_directory("static", "manifest.json")
 
 @app.route("/", methods=["GET", "POST"])
 def index():

@@ -1,0 +1,16 @@
+{
+    "name": "Weather App",
+    "short_name": "Weather",
+    "description": "Check weather anywhere!",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#667eea",
+    "theme_color": "#667eea",
+    "icons": [
+        {
+            "src": "/static/icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
