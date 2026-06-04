@@ -15,7 +15,7 @@ def index():
         response = requests.get(url)
         data = response.json()
         print("RESPONSE:", data)
-        if str(data["cod"]) == 200:
+        if str(data["cod"]) == "200":
             weather = {
                 "city": data["name"],
                 "temp": data["main"]["temp"],
