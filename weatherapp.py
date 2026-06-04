@@ -4,8 +4,7 @@ import os
 
 app = Flask(__name__)
 
-api_key = "teri real API key"
-
+api_key = "d7fcc888f9c930253aad15b1560d29dc"
 @app.route("/", methods=["GET", "POST"])
 def index():
     weather = None
